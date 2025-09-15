@@ -17,19 +17,21 @@ a{text-decoration:none;color:inherit}
 .menu>li>a{display:block;padding:10px 12px;border-radius:10px;transition:.25s}
 .menu>li>a:hover{background:rgba(255,255,255,.08)}
 
-.submenu{
-  position:absolute;
-  top:100%;
-  left:0;
-  background:#1f2937;
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:12px;
-  min-width:220px;
-  display:none;
-  padding:8px;
-  margin-top:8px;
-  box-shadow:0 16px 40px rgba(0,0,0,.18);
-  z-index:9999; /* 소메뉴가 다른 요소 위로 나오도록 */
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #1f2937;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 12px;
+  min-width: 220px;
+  opacity: 0;
+  visibility: hidden;
+  padding: 8px;
+  margin-top: 8px;
+  box-shadow: 0 16px 40px rgba(0,0,0,.18);
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+  z-index: 9999;
 }
 
 .submenu li{list-style:none}
@@ -37,8 +39,9 @@ a{text-decoration:none;color:inherit}
 .submenu a:hover{background:rgba(255,255,255,.08);color:#fff}
 
 /* 핵심 수정: 부모 li hover일 때 소메뉴 표시 */
-.menu li:hover > .submenu{
-  display:block;
+.menu li:hover > .submenu {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Layout */
