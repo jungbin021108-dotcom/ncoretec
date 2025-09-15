@@ -74,3 +74,13 @@ a{text-decoration:none;color:inherit}
   .hero{padding:56px 16px}
   .hero h1{font-size:1.9rem}
 }
+
+/* 뉴스룸 카드 호버 인터랙션 */
+.interactive-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.interactive-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(2, 6, 23, 0.18);
+}
