@@ -84,3 +84,11 @@ a{text-decoration:none;color:inherit}
   transform: translateY(-6px);
   box-shadow: 0 12px 28px rgba(2, 6, 23, 0.18);
 }
+
+
+.logo-bg {
+  background: white;
+  padding: 4px 8px;
+  border-radius: 8px;
+  display: inline-block;
+}
