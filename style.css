@@ -115,45 +115,26 @@ a{text-decoration:none;color:inherit}
   border-radius: 10px;    /* 모서리 살짝 둥글게 (선택사항) */
   box-shadow: 0 4px 20px rgba(0,0,0,0.1); /* 약간의 그림자 */
 }
-/* features-section: 이미지+텍스트 블록 (반응형) */
-.features-section { padding: 28px 20px; max-width:1100px; margin: 24px auto; }
-.feature-item {
-  display: flex;
-  gap: 18px;
-  align-items: flex-start;
-  background: #fff;
-  border-radius: 12px;
-  padding: 16px;
-  margin-bottom: 14px;
-  box-shadow: 0 8px 20px rgba(2,6,23,0.05);
-  border: 1px solid #eef2f7;
-}
-.feature-thumb {
-  width: 160px;          /* 썸네일 너비: 필요하면 조정 */
-  height: 100px;
-  object-fit: cover;
-  border-radius: 8px;
-  flex-shrink: 0;
-  box-shadow: 0 6px 18px rgba(2,6,23,0.04);
-}
-.feature-body h3 {
-  margin: 0 0 8px 0;
-  font-size: 1.05rem;
-  color: #0f172a;
-}
-.feature-body ul {
-  margin: 0;
-  padding-left: 18px;
-  color: #334155;
-}
-.feature-body li {
-  margin-bottom: 6px;
-  line-height: 1.45;
-  font-size: 0.98rem;
-}
 
-/* 모바일: 썸네일 위로 쌓이게 */
+
+/* antidrone details */
+.antidrone-details .container { max-width:1100px; margin:28px auto; padding:0 16px; }
+.detail-row { display:flex; gap:20px; align-items:flex-start; }
+.detail-thumb { flex:0 0 320px; } /* 이미지 고정폭 */
+.detail-thumb img { width:100%; height:auto; border-radius:10px; object-fit:cover; box-shadow:0 8px 22px rgba(2,6,23,0.06); }
+
+.detail-body { flex:1; }
+.detail-body h2 { margin:0 0 12px 0; font-size:1.25rem; color:#0f172a; }
+.detail-body h3 { margin-top:18px; margin-bottom:8px; font-size:1.05rem; color:#0f172a; }
+
+.dot-list { margin:0 0 10px 0; padding-left:18px; color:#334155; line-height:1.5; }
+.dot-list li { margin-bottom:8px; }
+
+/* 강조 스타일 (키워드에 색 넣을 때) */
+.detail-body strong { color:#2563eb; }
+
+/* 반응형: 모바일에서 이미지 위로 쌓기 */
 @media (max-width:760px) {
-  .feature-item { flex-direction: column; align-items: stretch; }
-  .feature-thumb { width: 100%; height: 200px; }
+  .detail-row { flex-direction:column; }
+  .detail-thumb { flex:0 0 auto; }
 }
