@@ -97,3 +97,15 @@ a{text-decoration:none;color:inherit}
   border-radius: 50%;
   padding: 5px;
 }
+.image-section {
+  text-align: center;     /* 가운데 정렬 */
+  margin-top: 20px;
+}
+
+.image-section img {
+  width: 100%;            /* 페이지 폭에 맞게 확장 */
+  max-width: 1200px;      /* 너무 커지지 않게 제한 */
+  height: auto;           /* 비율 유지 */
+  border-radius: 10px;    /* 모서리 살짝 둥글게 (선택사항) */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1); /* 약간의 그림자 */
+}
