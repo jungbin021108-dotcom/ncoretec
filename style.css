@@ -164,6 +164,15 @@ a{text-decoration:none;color:inherit}
   border-radius: 10px;
   display: block;
 }
+.product-list a {
+  display: block;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-list a:hover {
+  transform: translateY(-4px);
+}
+
 .product-list a:hover img {
-  filter: brightness(0.95);
+  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.18);
 }
