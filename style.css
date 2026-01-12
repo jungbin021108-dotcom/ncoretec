@@ -150,13 +150,14 @@ a{text-decoration:none;color:inherit}
   display: block;
 }
 
+/* ai 카메라 관련 */
 .product-list {
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: center;
 }
-/* ai 카메라 관련 */
+
 .product-list img {
   max-width: 700px;
   width: 100%;
@@ -165,3 +166,31 @@ a{text-decoration:none;color:inherit}
   display: block;
 }
 
+.product-list {
+  max-width: 900px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0 16px;
+}
+
+.product-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+/* 마우스 올렸을 때 카드 강조 */
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 36px rgba(0,0,0,0.18);
+}
