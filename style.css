@@ -142,7 +142,6 @@ a{text-decoration:none;color:inherit}
   border-radius: 8px;
   border: 1px solid #e5e7eb;
 }
-//그리드 추가 내용
 .grid img {
   max-width: 800px;   /* 최대 폭 제한 */
   width: 100%;
