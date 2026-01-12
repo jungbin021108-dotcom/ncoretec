@@ -149,3 +149,18 @@ a{text-decoration:none;color:inherit}
   margin: 20px auto;
   display: block;
 }
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+/* ai 카메라 관련 */
+.product-list img {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
