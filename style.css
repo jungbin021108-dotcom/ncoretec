@@ -138,3 +138,16 @@ a{text-decoration:none;color:inherit}
   .detail-row { flex-direction:column; }
   .detail-thumb { flex:0 0 auto; }
 }
+
+.image-only img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-only img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+}
