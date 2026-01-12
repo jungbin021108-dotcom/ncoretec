@@ -138,4 +138,11 @@ a{text-decoration:none;color:inherit}
   .detail-row { flex-direction:column; }
   .detail-thumb { flex:0 0 auto; }
 }
+.image-only img {
+  transition: none;
+}
 
+.image-only img:hover {
+  transform: none;
+  box-shadow: none;
+}
