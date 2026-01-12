@@ -143,8 +143,9 @@ a{text-decoration:none;color:inherit}
   border: 1px solid #e5e7eb;
 }
 .grid img {
-  max-width: 800px;   /* 최대 폭 제한 */
+  max-width: 500px !important;
   width: 100%;
-  margin: 0 auto;    /* 가운데 정렬 */
+  height: auto;
+  margin: 20px auto;
   display: block;
 }
