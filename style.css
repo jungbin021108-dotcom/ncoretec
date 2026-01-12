@@ -164,3 +164,6 @@ a{text-decoration:none;color:inherit}
   border-radius: 10px;
   display: block;
 }
+.product-list a:hover img {
+  filter: brightness(0.95);
+}
