@@ -50,7 +50,13 @@
       </ul>
     </nav>
   </header>
-
+<section class="slider">
+  <div class="slides">
+    <img src="images/aicam1.png" class="slide active">
+    <img src="images/aicam2.png" class="slide">
+    <img src="images/aicam4.png" class="slide">
+  </div>
+</section>
   <section class="hero">
     <div class="container">
       <h1>혁신을 만드는 기업</h1>
@@ -73,6 +79,15 @@
   <footer class="footer">
     &copy; 2026 Ncore Tec. All rights reserved.
   </footer>
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".slide");
 
+  setInterval(() => {
+    slides[currentSlide].classList.remove("active");
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add("active");
+  }, 3000); // 3초마다 변경
+</script>
 </body>
 </html>
