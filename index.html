@@ -80,6 +80,7 @@
     &copy; 2026 Ncore Tec. All rights reserved.
   </footer>
 <script>
+document.addEventListener("DOMContentLoaded", () => {
   let currentSlide = 0;
   const slides = document.querySelectorAll(".slide");
 
@@ -87,7 +88,8 @@
     slides[currentSlide].classList.remove("active");
     currentSlide = (currentSlide + 1) % slides.length;
     slides[currentSlide].classList.add("active");
-  }, 3000); // 3초마다 변경
+  }, 3000);
+});
 </script>
 </body>
 </html>
